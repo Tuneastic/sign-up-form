@@ -24,27 +24,27 @@
                 <div id="inputContainer">
                     <div id="fn">
                         <label for="firstName">FIRST NAME</label>
-                        <input type="text" name="firstName" id="firstName">
+                        <input type="text" name="firstName" id="firstName" required maxlength="30">
                     </div>
                     <div id="ln">
                         <label for="lastName">LAST NAME</label>
-                        <input type="text" name="lastName" id="lastName">
+                        <input type="text" name="lastName" id="lastName" required maxlength="30">
                     </div>
                     <div id="mail">
                         <label for="emailAddress">EMAIL</label>
-                        <input type="email" name="emailAddress" id="emailAddress">
+                        <input type="email" name="emailAddress" id="emailAddress" required>
                     </div>
                     <div id="telephone">
                         <label for="phoneNumber">PHONE NUMBER</label>
-                        <input type="tel" name="phoneNumber" id="phoneNumber">
+                        <input type="tel" name="phoneNumber" id="phoneNumber" required pattern="[0-9]{10}" title="Please enter a 10-digit phone number.">
                     </div>
                     <div id="pw">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required minlength="13" title="Please enter a 13 digit password">
                     </div>
                     <div id="pwcon">
                         <label for="confirmPassword">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirmPassword" id="confirmPassword">
+                        <input type="password" name="confirmPassword" id="confirmPassword" required minlength="13" title="Please enter a 13 digit password">
                     </div>
                 </div>
             </div>
