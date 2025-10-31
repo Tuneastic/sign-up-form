@@ -20,7 +20,7 @@
 }
 #main {
     display:flex;
-    width: 50%;
+    width: 60%;
     height:100vh;
     background-color: white;
 }
@@ -39,11 +39,11 @@
     left:50%;
     transform: translateX(-50%); 
     text-wrap: nowrap;
-    font-size: 10px;
+    font-size: 7px;
 }
 #logo {
     position: absolute;
-    top:30%;
+    top:25%;
     display:flex;
     justify-content: center;
     align-items:center;
@@ -68,8 +68,20 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 5px;
 }
-#inputs label, #button p {
+#button p {
     font-size: 10px;
+}
+#inputs label  {
+    font-size: 9px;
+    color:gray;
+}
+input {
+    height:20px;
+}
+#inputs p {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 #introduction, #inputs p {
     font-size: 15px;
@@ -78,10 +90,36 @@
 #introduction p, #inputContainer {
     margin-left:30px;
 }
+#inputContainer p {
+    margin-bottom: 5px;
+}
+label {
+    display:block;
+}
+#inputContainer {
+    display:flex;
+    flex-wrap: wrap;
+    gap:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#fn, #ln, #mail, #telephone, #pw, #pwcon {
+    flex: 1 0 45%;
+    box-sizing: border-box;
+}
+#introText {
+    padding-top:100px;
+}
+#introduction {
+    padding-bottom:20px;
+}
 #createAccount {
     background-color: #596D48;
     color: white;
     font-size: 12px;
+    height:30px;
+    width:150px;
+    border-radius:8px;
 }
 #button a {
     text-decoration: none;
@@ -90,11 +128,10 @@
 #button p {
     font-weight: bold;
 }
-#button button, #button p {
+#createAccount, #button p {
     margin-left:30px;
+    margin-top:20px;
 }
-#createAccount {
-    height:40px;
-    width:100px;
-}
+
+
 
